@@ -5,56 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet">
   </head>
 
   <body>
     <!--Шапка-->
-    <header>
-      <nav>
-        <!--Логотип-->
-        <a lang="en" href="./index.html" title="Головна сторінка"><span>Web</span>Studio</a>
-        <!--меню навігації-->
-        <ul>
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+      <header class="page-header">
+        <nav>
+          <!--Логотип-->
+          <a lang="en" href="./index.html" title="Головна сторінка" class="logo"><span>Web</span>Studio</a>
+          <!--меню навігації-->
+          <ul class="site-nav">
+            <li><a href="./index.html" class="text-nav">Студія</a></li>
+            <li><a href="./portfolio.html" class="text-nav current">Портфоліо</a></li>
+            <li><a href="" class="text-nav">Контакти</a></li>
+          </ul>
+        </nav>
+        <!--Контакти-->
+        <ul class="contact">
+          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="link">+38 (096) 111 11 11</a></li>
         </ul>
-      </nav>
-      <!--Контакти-->
-      <ul>
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link">+38 (096) 111 11 11</a></li>
-      </ul>
-    </header>
+      </header>
     <main>
       <!--Портфоліо-->
       <section>
-        <h1>Портфоліо</h1>
+        <h1 hidden>Портфоліо</h1>
         <!-- Фільтер -->
         <ul>
           <li>
-            <button type="button">Усі</button>
+            <button type="button" class="portfolio-button">Усі</button>
           </li>
           <li>
-            <button type="button">Веб-сайти</button>
+            <button type="button" class="portfolio-button">Веб-сайти</button>
           </li>
           <li>
-            <button type="button">Додатки</button>
+            <button type="button"class="portfolio-button">Додатки</button>
           </li>
           <li>
-            <button type="button">Дизайн</button>
+            <button type="button" class="portfolio-button">Дизайн</button>
           </li>
           <li>
-            <button type="button">Маркетинг</button>
+            <button type="button"class="portfolio-button">Маркетинг</button>
           </li>
         </ul>
         <!-- Проекти -->
         <ul>
           <li>
             <img src="./images/projects/technokrjak.jpg" alt="Технокряк" />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+            <h2 class="project-title">Технокряк</h2>
+            <p class="project-text">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -63,8 +68,8 @@
               width="370"
               height="294"
             />
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
+            <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+            <p class="project-text">Дизайн</p>
           </li>
           <li>
             <img
@@ -73,8 +78,8 @@
               width="370"
               height="294"
             />
-            <h2>Ресторан Seafood</h2>
-            <p>Додаток</p>
+            <h2 class="project-title">Ресторан Seafood</h2>
+            <p class="project-text">Додаток</p>
           </li>
           <li>
             <img
@@ -83,8 +88,8 @@
               width="370"
               height="294"
             />
-            <h2>Проєкт Prime</h2>
-            <p>Маркетинг</p>
+            <h2 class="project-title">Проєкт Prime</h2>
+            <p class="project-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -93,8 +98,8 @@
               width="370"
               height="294"
             />
-            <h2>Проєкт Boxes</h2>
-            <p>Додаток</p>
+            <h2 class="project-title">Проєкт Boxes</h2>
+            <p class="project-text">Додаток</p>
           </li>
           <li>
             <img
@@ -103,8 +108,8 @@
               width="370"
               height="294"
             />
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <h2 class="project-title">Inspiration has no Borders</h2>
+            <p class="project-text">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -113,8 +118,8 @@
               width="370"
               height="294"
             />
-            <h2>Видання Limited Edition</h2>
-            <p>Додаток</p>
+            <h2 class="project-title">Видання Limited Edition</h2>
+            <p class="project-text">Додаток</p>
           </li>
           <li>
             <img
@@ -123,8 +128,8 @@
               width="370"
               height="294"
             />
-            <h2>Проєкт LAB</h2>
-            <p>Маркетинг</p>
+            <h2 class="project-title">Проєкт LAB</h2>
+            <p class="project-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -133,30 +138,29 @@
               width="370"
               height="294"
             />
-            <h2>Growing Business</h2>
-            <p>Додаток</p>
+            <h2 class="project-title">Growing Business</h2>
+            <p class="project-text">Додаток</p>
           </li>
         </ul>
       </section>
     </main>
     <!--Підвал-->
-    <footer>
-      <a lang="en" href="./index.html" title="Головна сторінка"><span>Web</span>Studio</a>
-      <address>
-        <ul>
-          <li>
-            <a href="http://surl.li/cupve" target="_blank" rel="noopener norefferer nofollow"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111">+38 (096) 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-    </footer>
+  <footer>
+    <a lang="en" href="./index.html" title="Головна сторінка" class="logo"><span>Web</span>Studio</a>
+    <address>
+      <ul>
+        <li>
+          <a href="http://surl.li/cupve" target="_blank" rel="noopener norefferer nofollow" class="link map">м. Київ, пр-т
+            Лесі Українки, 26</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="link">+38 (096) 111 11 11</a>
+        </li>
+      </ul>
+    </address>
+  </footer>
   </body>
 </html>
