@@ -14,11 +14,13 @@ body {
   background-color: var(--background-color);
   color: var(--color-text);
 }
-li {
+.list {
   list-style: none;
 }
+/* Шапка */
 /* Логотип */
-.logo {
+.logo { 
+  text-decoration: none;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -27,11 +29,12 @@ li {
   letter-spacing: 0.03em;
   color: var(--color-logo);
 }
-span {
+.accent {
   color: var(--accent-color-text);
 }
 /* меню навігації */
 .text-nav {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -47,6 +50,7 @@ span {
 }
 /* Контакти */
 .contact-link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -75,6 +79,13 @@ span {
   color: var(--second-text-color);
 }
 /* Особливості */
+.visually-hidden {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+    }
 .personal-title {
   font-weight: 700;
   font-size: 14px;
@@ -108,12 +119,15 @@ span {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-
 /* Підвал */
 .footer {
   background-color: var(--second-background-color);
 }
+.footer-addr {
+  font-style: inherit;
+}
 .logo-footer {
+  text-decoration: none;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -123,9 +137,7 @@ span {
   color: var(--second-text-color);
 }
 .link {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
